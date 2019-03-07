@@ -21,7 +21,9 @@ public class Main {
         System.out.println(multiplication(a, b));
         System.out.println(divison(a, b));
         printWordFlip("Hello");
-        System.out.println(max(a,b) );
+        double c = 3;
+        double d = 100;
+        System.out.println(max(c, d));
 
     }
 
@@ -55,9 +57,9 @@ public class Main {
 
 
         }
-        public static int max (int fifthNumber, int sixthNumber) {
+        public static boolean max (double fifthNumber, double sixthNumber) {
 
-            int answer = fifthNumber > sixthNumber;
+            boolean answer = fifthNumber < sixthNumber;
 
             return answer;
 
