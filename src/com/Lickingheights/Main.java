@@ -1,5 +1,7 @@
 
-package com.Lickingheights;
+import java.util.Scanner;
+
+
 
 public class Main {
 
@@ -8,7 +10,7 @@ public class Main {
         //Make 8 commits
         //Make 6 Methods
         //1.that doesn't return anything and prints "Hello World"(Done)
-        //2.returns "hello" with whatever they type
+        //2.returns "hello" with whatever they type (Done)
         //3.Multiples two given numbers and returns the results (Done)
         //4.Divide two given numbers and returns a double (done)
         //5.Finds the max number (double) between two values and returns it
@@ -24,7 +26,8 @@ public class Main {
         double c = 3;
         double d = 100;
         System.out.println(max(c, d));
-
+        printName("Hello ");
+        Scanner keyboard;
     }
 
 
@@ -62,6 +65,18 @@ public class Main {
             boolean answer = fifthNumber < sixthNumber;
 
             return answer;
+
+
+
+        }
+
+        public static void printName (String userName) {
+        Scanner keyboard;
+        System.out.println("Whats your name?");
+        userName =  keyboard.nextLine();
+
+        System.out.println("Hello "+userName+);
+
 
 
 
