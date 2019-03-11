@@ -16,7 +16,8 @@ public class Main {
         //5.Finds the max number (double) between two values and returns it
         //6.Switch the order of two words and return it (Done)
 
-
+        Scanner keyboard;
+        keyboard= new Scanner(System.in);
         printGreetings("World");
         int a = 14;
         int b = 7;
@@ -26,8 +27,11 @@ public class Main {
         double c = 3;
         double d = 100;
         System.out.println(max(c, d));
-        printName("Hello ");
-        Scanner keyboard;
+
+
+        System.out.println("Whats your name?");
+        //String userName =
+        printName(keyboard.nextLine());
     }
 
 
@@ -71,11 +75,11 @@ public class Main {
         }
 
         public static void printName (String userName) {
-        Scanner keyboard;
-        System.out.println("Whats your name?");
-        userName =  keyboard.nextLine();
 
-        System.out.println("Hello "+userName+);
+
+       // userName = keyboard.nextLine();
+
+        System.out.println("Hello "+userName);
 
 
 
